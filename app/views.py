@@ -11,7 +11,7 @@ def index():
 def updateLog():
     data = request.get_json()
     print(data)
-    return "{'errormsg':'success'}"
+    return data
 
 @app.route('/log.html',methods=['GET'])
 def logWeb():
