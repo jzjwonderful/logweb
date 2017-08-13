@@ -12,3 +12,7 @@ def updateLog():
     data = request.get_json()
     print(data)
     return "{'errormsg':'success'}"
+
+@app.route('/log.html',methods=['GET'])
+def logWeb():
+    return "null log data"
